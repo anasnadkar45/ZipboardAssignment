@@ -36,7 +36,7 @@ export const AccordionPopOutItem = ({ children, className }: AccordionItemProps)
   return (
     <div
       className={cn(
-        "border-2 border-black rounded-lg overflow-hidden bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]", // Pop-out shadow
+        "border-2 border-black rounded-lg overflow-hidden bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(1,1,1,20)]", // Pop-out shadow
         className,
       )}
     >
@@ -50,11 +50,11 @@ export const AccordionPopOutTrigger = ({ children, className, onClick, isOpen }:
     <button
       onClick={onClick}
       className={cn(
-        "flex items-center justify-between w-full px-6 py-4 font-bold text-left text-black bg-[#A7C7FF] hover:bg-[#90B0E0] transition-colors duration-200 outline-none", // Blue header from image
+        "flex items-center justify-between w-full px-6 py-4 font-bold text-left hover:cursor-pointer text-black bg-[#A7C7FF] hover:bg-[#90B0E0] transition-colors duration-200 outline-none", // Blue header from image
         className,
       )}
     >
-      <span className="text-base">{children}</span>
+      <span className="text-2xl font-extrabold">{children}</span>
       <motion.div
         animate={{
           rotate: isOpen ? 0 : 180, // Rotate from up to down

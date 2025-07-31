@@ -50,11 +50,11 @@ export const AccordionSubtleShadowTrigger = ({ children, className, onClick, isO
     <button
       onClick={onClick}
       className={cn(
-        "flex items-center justify-between w-full px-6 py-4 font-semibold text-left text-foreground bg-transparent hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 outline-none",
+        "flex items-center justify-between w-full px-6 py-4 font-semibold text-left hover:cursor-pointer text-foreground bg-transparent hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 outline-none",
         className,
       )}
     >
-      <span className="text-base">{children}</span>
+      <span className="text-2xl font-extrabold">{children}</span>
       <motion.div
         animate={{
           rotate: isOpen ? 180 : 0,

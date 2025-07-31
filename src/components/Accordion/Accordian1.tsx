@@ -50,11 +50,11 @@ export const AccordionTrigger = ({ children, className, onClick, isOpen }: Accor
     <button
       onClick={onClick}
       className={cn(
-        "flex items-center justify-between w-full px-6 py-4 font-medium text-left text-foreground bg-transparent hover:bg-muted/50 transition-colors duration-200 focus:outline-none",
+        "flex items-center justify-between font-bold w-full px-6 py-4 text-left text-foreground bg-transparent hover:cursor-pointer hover:bg-muted/50 transition-colors duration-200 focus:outline-none",
         className,
       )}
     >
-      <span className="text-base">{children}</span>
+      <span className="text-2xl font-extrabold">{children}</span>
       <motion.div
         animate={{
           rotate: isOpen ? 180 : 0,
