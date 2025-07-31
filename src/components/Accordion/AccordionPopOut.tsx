@@ -54,7 +54,7 @@ export const AccordionPopOutTrigger = ({ children, className, onClick, isOpen }:
         className,
       )}
     >
-      <span className="text-2xl font-extrabold">{children}</span>
+      <span className="text-lg font-bold md:text-2xl md:font-extrabold">{children}</span>
       <motion.div
         animate={{
           rotate: isOpen ? 0 : 180, // Rotate from up to down

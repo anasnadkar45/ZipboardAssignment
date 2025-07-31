@@ -54,7 +54,7 @@ export const AccordionTrigger = ({ children, className, onClick, isOpen }: Accor
         className,
       )}
     >
-      <span className="text-2xl font-extrabold">{children}</span>
+      <span className="text-lg font-bold md:text-2xl md:font-extrabold">{children}</span>
       <motion.div
         animate={{
           rotate: isOpen ? 180 : 0,

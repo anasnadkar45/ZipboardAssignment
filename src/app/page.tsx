@@ -32,14 +32,14 @@ const HomePage = () => {
   const [openIndexSubtleShadow, setOpenIndexSubtleShadow] = React.useState<number | null>(null)
   return (
     <div className='space-y-10 h-screen'>
-      <header className='w-full border-b h-20 bg-card'>
-        <div className='w-7xl h-full mx-auto flex justify-between items-center '>
+      <header className='w-full border-b h-20 bg-card px-4 md:px-10'>
+        <div className='w-full md:max-w-7xl h-full mx-auto flex justify-between items-center '>
           <Image src={Logo} alt='Logo ZipBoard' height={150} width={150} />
           <ModeToggle />
         </div>
       </header>
 
-      <main className='h-fit w-7xl mx-auto space-y-10 pb-10'>
+      <main className='h-fit w-full md:max-w-7xl mx-auto space-y-10 pb-10 px-4 md:px-10'>
         {/* 1. Figma accordion */}
         <section className='space-y-6'>
           <h1 className='text-2xl font-bold text-[#8800C8] dark:text-[#2FC1FF] text-center'>1. Accordion to Figma</h1>
